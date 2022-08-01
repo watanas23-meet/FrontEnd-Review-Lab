@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <audio controls autoplay>
+        <source src="hamod.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +14,85 @@
       font-size: 100px;
         }
 
-       #welcome {
-         font-family: 'Courier New', Courier, monospace;
-       } 
+     
+        img {
+   position:absolute;
+   top:10%;
+   left:10%;
+   -webkit-animation-name:grow;
+   -webkit-animation-duration:3s;
+   -webkit-animation-iteration-count:infinite;
+   -webkit-animation-timing-function:linear;
+   -moz-animation-name:grow;
+   -moz-animation-duration:3s;
+   -moz-animation-iteration-count:infinite;
+   -moz-animation-timing-function:linear;
+   -ms-animation-name:grow;
+   -ms-animation-duration:3s;
+   -ms-animation-iteration-count:infinite;
+   -ms-animation-timing-function:linear;
+}
+
+@-webkit-keyframes grow
+ {
+   0% {
+      -webkit-transform:scale(1);
+   }
+   
+   50% {
+      -webkit-transform:scale(2);
+   }
+   
+   100% {
+      -webkit-transform:scale(1);
+   }
+
+}
+
+@-moz-keyframes grow
+ {
+   0% {
+      -moz-transform:scale(1);
+   }
+   
+   50% {
+      -moz-transform:scale(2);
+   }
+   
+   100% {
+      -moz-transform:scale(1);
+   }
+
+}
+
+@-ms-keyframes grow
+ {
+   0% {
+      -ms-transform:scale(1);
+   }
+   
+   50% {
+      -ms-transform:scale(2);
+   }
+   
+   100% {
+      -ms-transform:scale(1);
+   }
+
+}
+        
+        #welcome {
+        font-family: 'Courier New', Courier, monospace;
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
+
+       
 
        body {
         background-color: green;
@@ -25,9 +105,10 @@
         <h1 id="welcome">Welcome to my website :)</h1>
         <h2>Y2 - MEET 2022 </h2>
         <img src="https://uploads-ssl.webflow.com/5dd64bd3a930f9d04abd1363/5fe5ab26d7bed2a09ed5504e_meet-red-logo.svg"/>
+        <img style="top: 30%; left: 70%;" src="https://c.tenor.com/kDqX7ktylj8AAAAS/indian-dance-dance.gif"/>
     </div>
     <p>My name uis watan i'm the best human alive and i'm just a master peice
-        and I;m just too good for this lab and i'm unstobbapl
+        and I;m just too good fascasxcasxcasxascuiodhvasehilfasdyicor this lab and i'm unstobbapl
          sorrry for the miss splelling i'm just trying to write as much as i can</p>
         
         <a class="website" href="https://ixwatan.github.io/profile" target="_blank">VISIT MY WEBSITE</a>
